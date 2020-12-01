@@ -8,17 +8,13 @@ public class FraudData implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Automated")
+	@org.kie.api.definition.type.Label("Automated")
 	private java.lang.Boolean automated;
-	@org.kie.api.definition.type.Label(value = "Customer Status")
+	@org.kie.api.definition.type.Label("Customer Status")
 	private java.lang.String customerStatus;
-	@org.kie.api.definition.type.Label(value = "RiskRating")
+	@org.kie.api.definition.type.Label("RiskRating")
 	private java.lang.Integer disputeRiskRating;
-	@org.kie.api.definition.type.Label(value = "LineItem")
-	private java.lang.Integer lineItemCount;
-	@org.kie.api.definition.type.Label(value = "MaxDays")
-	private java.lang.Integer maxDaysElapsed;
-	@org.kie.api.definition.type.Label(value = "FraudAmount")
+	@org.kie.api.definition.type.Label("FraudAmount")
 	private java.lang.Float totalFraudAmount;
 
 	public FraudData() {
@@ -48,22 +44,6 @@ public class FraudData implements java.io.Serializable {
 		this.disputeRiskRating = disputeRiskRating;
 	}
 
-	public java.lang.Integer getLineItemCount() {
-		return this.lineItemCount;
-	}
-
-	public void setLineItemCount(java.lang.Integer lineItemCount) {
-		this.lineItemCount = lineItemCount;
-	}
-
-	public java.lang.Integer getMaxDaysElapsed() {
-		return this.maxDaysElapsed;
-	}
-
-	public void setMaxDaysElapsed(java.lang.Integer maxDaysElapsed) {
-		this.maxDaysElapsed = maxDaysElapsed;
-	}
-
 	public java.lang.Float getTotalFraudAmount() {
 		return this.totalFraudAmount;
 	}
@@ -75,13 +55,10 @@ public class FraudData implements java.io.Serializable {
 	public FraudData(java.lang.Boolean automated,
 			java.lang.String customerStatus,
 			java.lang.Integer disputeRiskRating,
-			java.lang.Integer lineItemCount, java.lang.Integer maxDaysElapsed,
 			java.lang.Float totalFraudAmount) {
 		this.automated = automated;
 		this.customerStatus = customerStatus;
 		this.disputeRiskRating = disputeRiskRating;
-		this.lineItemCount = lineItemCount;
-		this.maxDaysElapsed = maxDaysElapsed;
 		this.totalFraudAmount = totalFraudAmount;
 	}
 
